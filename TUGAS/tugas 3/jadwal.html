@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Jadwal Kegiatan Belajar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9fafb;
+      padding: 20px;
+    }
+
+    .jadwal-box {
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      padding-left: 10px;
+      border-left: 5px solid #f59e0b;
+      /* warna kuning di kiri */
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      background: #1d4ed8;
+      /* biru tua */
+      color: white;
+      padding: 10px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background: #f9fafb;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Tentang Jadwal Kegiatan Sehari-Sehari</h1>
+    <p>Koleksi Foto Diri & Minat</p>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="biodata.html">Biodata</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="feedback.html">Feedback</a>
+    </nav>
+  </header>
+  <div class="jadwal-box">
+    <h3 class="section-title">Jadwal Kegiatan Belajar</h3>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Waktu</th>
+          <th rowspan="2">Hari</th>
+          <th rowspan="2">Kegiatan</th>
+        </tr>
+        <tr>
+          <th>Mulai</th>
+          <th>Selesai</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>08:00</td>
+          <td>10:00</td>
+          <td rowspan="2">Senin</td>
+          <td>Pelajaran Web Dasar (Teori HTML)</td>
+        </tr>
+        <tr>
+          <td>10:00</td>
+          <td>10:30</td>
+          <td>ISTIRAHAT (Snack & Shalat Dhuha)</td>
+        </tr>
+        <tr>
+          <td>10:30</td>
+          <td>12:00</td>
+          <td>Senin</td>
+          <td>Latihan Praktikum HTML Table</td>
+        </tr>
+        <tr>
+          <td>14:00</td>
+          <td>16:00</td>
+          <td>Selasa</td>
+          <td>Pelajaran Web Dasar (Teori CSS & Box Model)</td>
+        </tr>
+        <tr>
+          <td>16:00</td>
+          <td>16:45</td>
+          <td>Selasa</td>
+          <td>Olahraga (Renang)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <footer class="footer card">
+    <a href="galeri.html" class="btn">⬅ Kembali ke Galeri</a><br /><br />
+  </footer>
+</body>
+
+</html>

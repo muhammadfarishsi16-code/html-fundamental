@@ -1,0 +1,48 @@
+/* Reset */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background: #38369e;
+  color: #111827;
+}
+
+/* Judul section dengan border-left */
+header {
+  text-align: center;
+  color: #d10909;
+  margin-bottom: 20px;
+}
+
+/* Box konten */
+.box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(69, 167, 69, 0.05);
+}
+
+/* Foto profil bulat */
+.avatar {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #e5ebe5;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Link hover */
+a {
+  color: #eb2525;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #26dc32;
+  transition: 0.3s;
+}

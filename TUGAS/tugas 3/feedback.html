@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Feedback</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Feedback / Buku Tamu</h1>
+        </header>
+
+        <header class="header">
+            <nav class="nav">
+                <a href="index.html">Beranda</a>
+                <a href="biodata.html">Biodata</a>
+                <a href="galeri.html">Galeri</a>
+                <a href="jadwal.html">Jadwal</a>
+            </nav><br /><br />
+        </header>
+
+        <section class="card">
+            <form action="https://httpbin.org/post" method="POST" target="_blank">
+                <label>Nama: <input type="text" name="nama" required></label><br><br>
+                <label>Umur: <input type="number" name="umur" required></label><br><br>
+                <label>Email: <input type="email" name="email" required></label><br><br>
+                <label>Rating Kepuasan Website (Skala 1-10):<input type="number 1-10" name="Rating"
+                        required></label><br><br>
+                <label><input type="radio" name="jk" value="L"> Laki-laki</label>
+                <label><input type="radio" name="jk" value="P"> Perempuan</label>
+                <label><input type="radio" name="jk" value="R"> Random</label><br><br>
+                <label><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+                <label><input type="checkbox" name="hobi" value="Ngoding"> Ngoding</label>
+                <label><input type="checkbox" name="hobi" value="main bola">Main Bola</label><br><br>
+                <label>Topik Favorit:
+                    <select name="favorit">
+                        <option>Web Development</option>
+                        <option>AI</option>
+                        <option>DevOps</option>
+                        <option>Ilmu Agama</option>
+                    </select>
+                </label><br><br>
+                <label>Pesan: <br>
+                    <textarea name="pesan" rows="medium" cols="40"></textarea>
+                </label><br><br>
+                <button type="reset" class="btn">Atur Ulang</button>
+                <button type="submit" class="btn">Kirim Feedback</button>
+            </form>
+        </section>
+
+        <footer class="footer card">
+            <a href="jadwal.html" class="btn">⬅ Kembali Ke Jadwal</a>
+        </footer>
+    </div>
+</body>
+
+</html>

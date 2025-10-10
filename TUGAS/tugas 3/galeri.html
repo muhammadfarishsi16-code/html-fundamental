@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Karya Santri</title>
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            background-color: #4fb72f;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px 10px;
+        }
+
+        header h1 {
+            color: #1e3a8a;
+            font-size: 28px;
+            margin-bottom: 4px;
+        }
+
+        header p {
+            color: #777;
+            margin: 0;
+            font-size: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid #41db23;
+            border-radius: 20px;
+            color: #1e3a8a;
+            font-weight: 500;
+            background: rgb(23, 207, 26);
+            transition: 0.2s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: #1e3a8a;
+            color: rgb(33, 192, 65);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: rgb(24, 136, 176);
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 18px;
+            border-left: 4px solid #facc15;
+            padding-left: 8px;
+            color: #1e3a8a;
+            margin-bottom: 15px;
+        }
+
+        /* Bagian galeri tersusun ke samping */
+        .gallery {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 10px;
+        }
+
+        .gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .gallery::-webkit-scrollbar-thumb {
+            background: #2bcd19;
+            border-radius: 5px;
+        }
+
+        .gallery::-webkit-scrollbar-thumb:hover {
+            background: #18be1e;
+        }
+
+        .card {
+            flex: 0 0 220px;
+            background: rgb(101, 193, 232);
+            border-radius: 10px;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .card p {
+            margin: 8px 0;
+            padding: 0 10px 10px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        iframe {
+            width: 100%;
+            border-radius: 10px;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galeri Karya Santri</h1>
+        <p>Karya Pertama: Website Profil Pribadi</p>
+        <nav>
+            <a href="index.html" class="active">Beranda</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="jadwal.html">Jadwal</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Karya Desain</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/CR7.jpg" alt="Karya 1">
+                    <p>Pemain Bola Idola.</p>
+                </div>
+                <div class="card">
+                    <img src="images/madrid(pr).webp" alt="Karya 2">
+                    <p>Salah Satu Club Yg Kusuka.</p>
+                </div>
+                <div class="card">
+                    <img src="images/Logo Madrid.jpg" alt="Karya 3">
+                    <p>Logo Club Idola.</p>
+                </div>
+                <div class="card">
+                    <img src="images/my photo.jpg" alt="Karya 4">
+                    <p>Foto Diri (lokal).</p>
+                </div>
+                <div class="card">
+                    <img src="images/logo (2).webp" alt="Karya 5">
+                    <p>Logo Ma'had HSI Boarding School.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer card">
+        <a href="biodata.html" class="btn">⬅ Kembali ke Biodata</a><br /><br />
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+/* Reset sederhana */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Warna latar untuk memvisualisasikan blok */
+header,
+.header {
+  background: #4caf50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav,
+.nav {
+  margin-top: 10px;
+  background: #45a049;
+  padding: 10px;
+}
+
+nav a,
+.nav a {
+  color: green;
+  text-decoration: none;
+  /* hapus garis bawah */
+  border-radius: 22px;
+  /* ubah sudut jadi bulat */
+  background: #fff;
+  padding: 6px 14px;
+  /* padding-top: 6px; */
+  /* padding-bottom: 6px; */
+  /* padding-left: 14px; */
+  /* padding-right: 14px; */
+  margin-right: 8px;
+  /* jarak luar antar link */
+}
+
+main,
+.main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Section / Artikel utama */
+section,
+.section {
+  flex: 2;
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+/* Article khusus */
+article,
+.article {
+  background: #bbdefb;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Sidebar / aside */
+aside,
+.aside {
+  flex: 1;
+  background: #ffe082;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+h2 {
+  border-left: 5px solid #22c55e;
+  padding-left: 10px;
+  color: #333;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  /* supaya garis rapet */
+  background: #fff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  border: 1px solid #444;
+  /* garis tabel */
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #22c55e;
+  color: white;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+  /* selang-seling abu2 */
+}
+
+/* Footer */
+footer,
+.footer {
+  background: black;
+  color: green;
+  padding: 15px;
+  text-align: center;
+}

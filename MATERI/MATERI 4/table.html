@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #table-basic {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        #table-basic td {
+            padding: 6px;
+            font-size: 16px;
+        }
+        #table-basic .bg-blue {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML 5 TABLE</h1>
+    <hr />
+    <h3>TABLE DASAR</h3>
+    <!-- !--<tr> : untuk membuat baris -->
+    <!-- !--<td> : untuk membuat data/kolom -->
+    <table border="1" style="width: 80%;" id="table-basic">
+        <tr class="bg-blue">
+            <td>No:</td>
+            <td>Nama:</td>
+            <td>Asal:</td>
+            <td>Kewarganegaraan:</td>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Faris</td>
+            <td>Bekasi,Jabar</td>
+            <td>Indonesia</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Michael</td>
+            <td>New York</td>
+            <td>Amerika Serikat</td>
+        </tr>       
+        <tr>
+            <td>3.</td>
+            <td>Gabriel</td>
+            <td>London</td>
+            <td>Inggris</td>
+        </tr>
+         <tr>
+            <td>4.</td>
+            <td>kitazawa</td>
+            <td>Tokyo</td>
+            <td>Jepang</td>
+        </tr>
+         <tr>
+            <td>5.</td>
+            <td>Victoria</td>
+            <td>Wina</td>
+            <td>Austria</td>
+        </tr>
+         <tr>
+            <td>6.</td>
+            <td>Emma</td>
+            <td>Berlin</td>
+            <td>Jerman</td>
+        </tr>
+        <tr>
+            <td>7.</td>
+            <td>Muna Khoirunnisa</td>
+            <td>Bekasi</td>
+            <td>Indonesia</td>
+        </tr>
+        <tr>
+            <td>8.</td>
+            <td>Misaki</td>
+            <td>kyoto</td>
+            <td>Jepang</td>
+        </tr>
+        <tr>
+            <td>9.</td>
+            <td>Aysel</td>
+            <td>Istanbul</td>
+            <td>Turki</td>
+        </tr>
+        <tr>
+            <td>10.</td>
+            <td>Emir</td>
+            <td>Istanbul</td>
+            <td>Turki</td>
+        </tr>
+    </table>
+
+    <h3>Table Standard</h3>
+    <!-- Shorcout: table>thead+tbody+tfoot -->
+    <!-- <th>: untuk membuat data/kolom di thead -->
+        <table border="1" style="width: 70%;">
+        <thead>
+            <tr>
+                <th>No:</th>
+                <th>Tanggal:</th>
+                <th>Nama Barang:</th>
+                <th>Harga Barang:</th>
+            </tr>
+             <tr>
+                <th>1.</th>
+                <th>01/06/2025</th>
+                <th>Tas Koper</th>
+                <th>500,000</th>
+            </tr>
+            <tr>
+                <th rowspan="2">2.</th>
+                <th>16/06/2025</th>
+                <th rowspan="2">Kue Ulang Tahun</th>
+                <th>160.000</th>
+                
+            </tr>
+            <tr>
+                <!--<th>3.</th>-->
+                <th>23/05/2025</th>
+                <!-- <th>Raket Bulu Tangkis</th>-->
+                <th>120.000</th>
+            </tr>
+            <tr>
+                <th>3.</th>
+                <th>01/06/2025</th>
+                <th>Raket Bulu Tangkis</th>
+                <th>1,500,000</th>
+            </tr>
+            <tfoot>
+                <td colspan="3"><b>Total Pengeluaran:</b></td>
+                <td><b>RP. 2.280.000</b></td>
+            </tfoot>
+        </thead>
+    </table>
+</body>
+</html>

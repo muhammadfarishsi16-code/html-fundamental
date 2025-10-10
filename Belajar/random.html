@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Santri</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #3498db, #2ecc71);
+      color: white;
+      padding: 40px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    nav {
+      background: #2c3e50;
+      text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #2ecc71;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    section h2 {
+      color: #3498db;
+      margin-bottom: 10px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-top: 15px;
+    }
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .profile img {
+      width: 200px;
+      border-radius: 50%;
+      border: 3px solid #3498db;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio Santri</h1>
+    <p>Menggabungkan ilmu agama dan teknologi untuk masa depan cerah</p>
+  </header>
+
+  <nav>
+    <a href="#profil">Profil</a>
+    <a href="#projek">Projek</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <!-- Profil -->
+    <section id="profil">
+      <h2>Profil</h2>
+      <div class="card profile">
+        <img src="images/faris.jpg" alt="Foto">
+        <div>
+          <p>
+            Halo, nama saya <b>Muhammad Faris</b>, seorang <i>santri</i> yang sedang belajar
+            pemrograman web. Saya percaya bahwa <u>teknologi</u> bisa menjadi sarana
+            untuk berdakwah dan memberikan manfaat.  
+            <s>Dulu saya tidak suka coding</s>, tapi sekarang menjadi bagian penting dari hobi saya.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projek -->
+    <section id="projek">
+      <h2>Projek Terbaru</h2>
+      <div class="card">
+        <p>Saya sedang mengembangkan website sederhana untuk latihan HTML dan CSS.  
+        Website ini menampilkan biodata, portfolio, serta informasi kontak.</p>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+      <h2>Kontak</h2>
+      <div class="card">
+        <p>
+          📧 Email: <a href="mailto:contoh@email.com">contoh@email.com</a><br>
+          📷 Instagram: <a href="https://instagram.com/username" target="_blank">@username</a><br>
+          📘 Facebook: <a href="https://facebook.com/username" target="_blank">facebook.com/username</a>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Portfolio Santri | Dibuat dengan ❤️ dan semangat belajar
+  </footer>
+</body>
+</html>

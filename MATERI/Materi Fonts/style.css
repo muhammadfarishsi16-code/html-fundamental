@@ -1,0 +1,29 @@
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.h1 {
+    color: blue;
+    font-size: 40px;
+}
+
+.h2 {
+    font-weight: bolder;
+}
+
+.paragraph {
+    width: 40%;
+    font-family: "Bitcount Prop Single Ink", system-ui;
+}
+
+.paragraph p {
+    text-align: left;
+    text-transform: capitalize;
+    line-height: 3;
+    letter-spacing: 2px;
+}

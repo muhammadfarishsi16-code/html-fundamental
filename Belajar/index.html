@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Santri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif; margin:0; padding:0;
+      background: linear-gradient(-45deg, #3498db, #2ecc71, #9b59b6, #e74c3c);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color:#333;
+    }
+    header {
+      color:#fff; padding:40px; text-align:center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    header h1 {margin:0; font-size:2.5em;}
+    nav {
+      background:rgba(44,62,80,0.9); text-align:center; padding:15px 0;
+      position: sticky; top: 0; z-index: 10;
+    }
+    nav a {
+      color:white; text-decoration:none; margin:0 15px;
+      font-weight:bold; transition:color 0.3s, transform 0.3s;
+      display:inline-block;
+    }
+    nav a:hover {
+      color:#2ecc71;
+      transform:scale(1.1);
+    }
+    .container {max-width:1000px; margin:30px auto; padding:0 20px;}
+    .card {
+      background:rgba(255,255,255,0.9); border-radius:12px; padding:20px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1); margin-top:20px;
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform:translateY(-5px);
+      box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    }
+    footer {
+      background:rgba(44,62,80,0.9); color:white; text-align:center;
+      padding:20px; margin-top:40px;
+    }
+    .profile {display:flex; align-items:center; gap:20px;}
+    .profile img {
+      width:200px; border-radius:50%;
+      border:3px solid #3498db;
+      transition:transform 0.4s;
+    }
+    .profile img:hover {
+      transform:rotate(5deg) scale(1.05);
+    }
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(-20px);}
+      to {opacity:1; transform:translateY(0);}
+    }
+    @keyframes gradientBG {
+      0% {background-position:0% 50%;}
+      50% {background-position:100% 50%;}
+      100% {background-position:0% 50%;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio Santri</h1>
+    <p>Menggabungkan ilmu agama dan teknologi untuk masa depan cerah</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <div class="container">
+    <section class="card profile">
+      <img src="images/CR7.jpg" alt="Avatar">
+      <div>
+        <p>
+          Halo, nama saya <b>Muhammad Faris</b>, seorang <i>santri</i> yang sedang belajar pemrograman web.  
+          Website ini dibuat untuk latihan membuat <u>profil digital</u>.  
+          <s>Dulu saya malas ngoding</s>, tapi sekarang jadi hobi saya.
+        </p>
+        <a href="biodata.html">➡️ Lihat Biodata Lengkap</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Portfolio Santri | Dibuat dengan ❤️ dan semangat belajar
+  </footer>
+</body>
+</html>

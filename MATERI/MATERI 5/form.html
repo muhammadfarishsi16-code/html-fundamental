@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 FORM</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+
+</head>
+
+<body>
+    <main class="container">
+        <h1>HTML 5 FORM TOTORIAL</h1>
+        <hr />
+        <form>
+            <div>
+                <label for="">Nama Lengkap:</label>
+                <input type="text" name="nama_lengkap" id="inputName" />
+            </div>
+
+            <div>
+                <label for="inputAge">Umur:</label>
+                <input type="number" name="Umur" id="inputAge" />
+            </div>
+
+            <div>
+                <p>Jenis Kelamin:</p>
+                <input type="radio" name="jenis_kelamin" id="inputLk" />
+                <label for="inputkelamin">Pria:</label>
+                <input type="radio" name="jenis_kelamin" id="inputPr" />
+                <label for="inputkelamin">Wanita:</label>
+                <br /><br />
+            </div>
+
+            <div>
+                <p>Hobi:</p>
+                <input type="checkbox" name="hobi" id="inputmainbola" />
+                <label for="inputmainbola">Main Bola</label>
+                <input type="checkbox" name="hobi" id="inputbulutangkis" />
+                <label for="inputbulutangkis">Bulu Tangkis</label>
+                <input type="checkbox" name="hobi" id="inputVoli" />
+                <label for="inputVoli">Voli</label>
+                <br /><br />
+            </div>
+
+            <div>
+                <label for="inputkota">Asal Kota:</label>
+                <select name="asal_kota" id="inputkota">
+                    <option value="BKS">Bekasi</option>
+                    <option value="JKT">Jakarta</option>
+                    <option value="YOG">Yogyakarta</option>
+                    <option value="PRW">Purworejo</option>
+                </select>
+            </div>
+            <div>
+                <label for="inputdate">Tanggal Lahir:</label>
+                <input type="date" name="Tanggal_Lahir" id="inputdate" />
+            </div>
+            <div>
+                <label for="inputEmail">Alamat Email:</label>
+                <input type="email" name="email" id="inputEmail" />
+            </div>
+            <div>
+                <label for="inputpass">Password:</label>
+                <input type="password" name="password" id="inputpass" />
+            </div>
+
+            <div class="grid">
+                <button type="reset">Batal</button>
+                <button type="submit">Simpan</button>
+            </div>
+
+
+        </form>
+    </main>
+</body>
+
+</html>
