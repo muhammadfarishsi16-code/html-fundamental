@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
+  background: #000;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.page1 {
+  background-image: url('img/stormfjord-battle.jpg');
+}
+
+.page2 {
+  background-image: url('img/valoria-skyfleet.jpg');
+}
+
+/* Overlay gelap lembut agar teks terbaca */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(2px);
+}
+
+/* Isi teks */
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 40px;
+  background: rgba(20,20,20,0.6);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+  animation: fadeIn 1.5s ease;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #00d4ff;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 1em;
+}
+
+/* Navigasi antar halaman */
+.nav {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.nav a {
+  background: #00d4ff;
+  color: #000;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  background: #00a3cc;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}

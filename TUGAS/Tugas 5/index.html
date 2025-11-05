@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solusi Tugas CSS Komponen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Solusi Tugas CSS Komponen</h1>
+
+  <section>
+    <h2>1. Peringatan yang Dapat Ditutup (Penempatan)</h2>
+    <div class="alert">
+      <p><strong>Informasi Penting:</strong> Ini adalah contoh notifikasi sukses. Klik 'X' untuk menutup.</p>
+      <button class="close">❌</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>2. Profile Card (Kartu Profil)</h2>
+    <div class="profile-card">
+      <div class="avatar">
+        <img src="images/user.jpg" alt="User Photo" />
+        <span class="badge"></span>
+      </div>
+      <h3>Muhammad Fariz Ritonga</h3>
+      <p>UI/UX Designer</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. Kartu Harga Responsif (Flexbox)</h2>
+    <div class="pricing">
+      <div class="plan">
+        <h3>Paket Dasar</h3>
+        <p class="price">$15</p>
+        <ul>
+          <li>5 Pengguna</li>
+          <li>2 GB Penyimpanan</li>
+          <li>Dukungan Email</li>
+        </ul>
+        <button class="basic">Pilih Dasar</button>
+      </div>
+
+      <div class="plan highlight">
+        <h3>Paket PRO</h3>
+        <p class="price">$49</p>
+        <ul>
+          <li><b>20 Pengguna</b></li>
+          <li><b>10 GB Penyimpanan</b></li>
+          <li>Dukungan Prioritas</li>
+        </ul>
+        <button class="pro">Beli PRO</button>
+      </div>
+
+      <div class="plan">
+        <h3>Paket Bisnis</h3>
+        <p class="price">$99</p>
+        <ul>
+          <li>Tidak Terbatas</li>
+          <li>50 GB Penyimpanan</li>
+          <li>Dukungan 24/7</li>
+        </ul>
+        <button class="business">Hubungi Kami</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const closeBtn = document.querySelector(".close");
+    const alertBox = document.querySelector(".alert");
+    closeBtn.addEventListener("click", () => alertBox.style.display = "none");
+  </script>
+</body>
+</html>

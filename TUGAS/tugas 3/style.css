@@ -8,7 +8,7 @@ body {
 /* Warna latar untuk memvisualisasikan blok */
 header,
 .header {
-  background: #4caf50;
+  background: aquamarine;
   color: white;
   padding: 15px;
   text-align: center;
@@ -17,18 +17,18 @@ header,
 nav,
 .nav {
   margin-top: 10px;
-  background: #45a049;
+  background: aqua;
   padding: 10px;
 }
 
 nav a,
 .nav a {
-  color: green;
+  color: blanchedalmond;
   text-decoration: none;
   /* hapus garis bawah */
   border-radius: 22px;
   /* ubah sudut jadi bulat */
-  background: #fff;
+  background: indianred;
   padding: 6px 14px;
   /* padding-top: 6px; */
   /* padding-bottom: 6px; */
@@ -39,18 +39,32 @@ nav a,
 }
 
 main,
-.main {
+
+.section {
   display: flex;
   gap: 20px;
-  padding: 20px;
-  background: #f9f9f9;
+  background: aquamarine;
+  border-left: 5px solid #1d4ed8;
+  padding: 20px 30px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.section card li {
+  display: flex;
+  gap: 20px;
+  background: aquamarine;
+  border-left: 5px solid #1d4ed8;
+  padding: 20px 30px;
+  border-radius: 6px;
+  margin-bottom: 20px;
 }
 
 /* Section / Artikel utama */
 section,
 .section {
   flex: 2;
-  background: #e3f2fd;
+  background: whitesmoke;
   padding: 15px;
   border-radius: 6px;
 }
@@ -74,7 +88,7 @@ aside,
 }
 
 h2 {
-  border-left: 5px solid #22c55e;
+  border-left: 5px solid white;
   padding-left: 10px;
   color: #333;
 }
@@ -88,6 +102,7 @@ table {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 th,
 td {
   border: 1px solid #444;
@@ -97,7 +112,7 @@ td {
 }
 
 th {
-  background: #22c55e;
+  background: white;
   color: white;
 }
 
@@ -115,8 +130,8 @@ tr:nth-child(even) {
 /* Footer */
 footer,
 .footer {
-  background: black;
-  color: green;
+  background: aquamarine;
+  color: blueviolet;
   padding: 15px;
   text-align: center;
 }

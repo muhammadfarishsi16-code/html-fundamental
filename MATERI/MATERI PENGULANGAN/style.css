@@ -1,0 +1,32 @@
+ .card {
+    background-color: aquamarine;
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    line-height: 200px;
+    border: 2px solid #eee;
+    border-radius: 6px;
+ }
+
+ .pricing-area {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .Pro-blue {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+ }
+
+ .alert {
+    display: flex;
+    background-color: aqua;
+    border: 2px solid blue;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+ }

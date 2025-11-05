@@ -1,0 +1,44 @@
+.card {
+    background: rgb(71, 108, 188);
+    text-align: center;
+    height: 250px;
+    width: 250px;
+    border: 2px dashed #333;
+    border-radius: 6px;
+}
+
+#box-a{
+    background: rgb(219, 114, 58);
+    width: 200px;
+    height: 200px;
+}
+
+#box-b{
+    width: 200px;
+    height: 200px;
+    background: rgb(65, 177, 197);
+    padding: 10px;
+}
+
+#box-c{
+    width: 200px;
+    height: 200px;
+    background: rgb(234, 223, 98);
+    padding: 10px;
+    border: 5px solid blueviolet;
+}
+
+#box-d{
+    width: 200px;
+    height: 200px;
+    background: greenyellow;
+    padding: 10px;
+    border: 5px solid blueviolet;
+    margin: 20px;
+}
+
+#box-f{
+    width: 200px;
+    height: 200px;
+    background: rgb(216, 70, 70);
+}

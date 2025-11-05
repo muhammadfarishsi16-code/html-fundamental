@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Bismillah Script";
+  src: url(font/Bismillah\ Script.ttf);
+}
+
+.body {
+    font-family: 'bismillah_script.zip',cursive;
+    background-color: aqua;
+    color: blue;
+}
+
+.profil {
+    background-color: wheat;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+
+
+.profil p {
+    color: blue;
+    font-style: italic;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.card {
+    background: wheat;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    padding: 25px 30px;
+    margin-bottom: 25px;
+}
+
+.main article p {
+  font-family: 'merriweather', serif;
+  font-style: italic;
+  color: #1e3a8a;
+  background: aquamarine;
+  border-left: 5px solid greenyellow;
+  padding: 15px 25px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  color: #166534; /* hijau tua */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card b {
+  color: #b91c1c; /* merah */
+}
+
+.quote {
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  color: #1e3a8a;
+  background: aqua;
+  border-left: 5px solid #1d4ed8;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+  font-size: 18px;
+}
+
+/* Catatan penting */
+.note {
+  background: #fef2f2;
+  color: #b91c1c;
+  border-left: 4px solid #dc2626;
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  
+}
+
+/* Footer dengan tanda tangan */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: blue;
+}
+
+.signature {
+  font-family: "Bismillah Script", cursive;
+  color: blue;
+  font-size: 30px;
+  text-align: right;
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chronicles of Aetherion — Era Cahaya</title>
+
+  <style>
+    /* ===== Global ===== */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0%, #020617 100%);
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: rgba(15, 23, 42, 0.85);
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #38bdf8;
+      margin: 0;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #cbd5e1;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 100px 10%;
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ===== Background Parallax ===== */
+    section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      opacity: 0.12;
+      z-index: 0;
+      transform: scale(1.1);
+    }
+
+    .section-title {
+      position: relative;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      z-index: 1;
+    }
+
+    .story {
+      position: relative;
+      max-width: 800px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+
+    .story.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #94a3b8;
+      background: #0f172a;
+      font-size: 14px;
+      border-top: 1px solid #1e293b;
+    }
+
+    /* Tombol Scroll */
+    .scroll-top {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 10px 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #38bdf8aa;
+    }
+
+    .scroll-top:hover {
+      background: #0ea5e9;
+    }
+
+    /* ===== Animasi typing effect untuk judul utama ===== */
+    .intro {
+      display: inline-block;
+      border-right: 3px solid #38bdf8;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 4s steps(40) forwards, blink 0.8s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 320px }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 class="intro">Chronicles of Aetherion</h1>
+    <nav>
+      <a href="#page1">Prolog</a>
+      <a href="#page2">Bab 1</a>
+      <a href="#page3">Bab 2</a>
+      <a href="#page4">Bab 3</a>
+      <a href="#page5">Epilog</a>
+    </nav>
+  </header>
+
+  <!-- PROLOG -->
+  <section id="page1">
+    <h2 class="section-title">Prolog — Bara di Langit Timur</h2>
+    <div class="story">
+      <p>Langit Aetherion terbakar merah, dihiasi cahaya plasma yang menyala seperti aurora neraka. Dunia kini terbagi antara dua kekuatan: **Federasi Solaris** dan **Dominion Umbra**. Kedua belah pihak memegang teknologi senjata berbasis energi inti — senjata yang dapat menghancurkan benua dalam satu ledakan.</p>
+      <p>Di tengah kehancuran itu, seorang prajurit muda bernama **Kael Varin** berdiri di reruntuhan kota Luminar, membawa tombak cahaya kuno _Lance of Solis_ yang hanya bisa diaktifkan oleh jiwa murni. Di matanya, langit memantulkan perang terakhir umat manusia.</p>
+    </div>
+  </section>
+
+  <!-- BAB 1 -->
+  <section id="page2">
+    <h2 class="section-title">Bab 1 — Bayangan dari Utara</h2>
+    <div class="story">
+      <p>Pasukan Dominion menyerbu dari utara. Langit hitam diselimuti ribuan drone tempur berbentuk gagak logam. Ledakan plasma mengguncang lembah Nordveil. Kael dan Unit Nova mengenakan baju tempur nano, bergerak di bawah badai api.</p>
+      <p>“Kita bukan prajurit biasa,” seru Kael, “kita adalah cahaya terakhir Aetherion!” Tombak Solis menyala, menebas kegelapan, dan setiap langkah mereka menjadi simbol perlawanan di dunia yang hampir padam.</p>
+    </div>
+  </section>
+
+  <!-- BAB 2 -->
+  <section id="page3">
+    <h2 class="section-title">Bab 2 — Menembus Badai Plasma</h2>
+    <div class="story">
+      <p>Badai plasma menggulung dari langit. Kapal perang Dominion, **Oblivion Ark**, menjatuhkan pasukan mecha bersayap laser. Kael terlempar ke jurang energi dan hanya bisa bertahan berkat kekuatan Solis yang mulai terbangun sepenuhnya.</p>
+      <p>Suara ibunya menggema dalam helmnya: “Selama masih ada cahaya dalam dirimu, Aetherion belum berakhir.” Dengan amarah dan harapan yang menyatu, Kael menghantam inti badai — memecah langit menjadi serpihan cahaya biru.</p>
+    </div>
+  </section>
+
+  <!-- BAB 3 -->
+  <section id="page4">
+    <h2 class="section-title">Bab 3 — Fajar dari Senjata Terakhir</h2>
+    <div class="story">
+      <p>Federasi Solaris mempersiapkan **Aurora Cannon**, senjata orbital yang bisa menyalakan kembali matahari buatan. Namun sistemnya diretas oleh Umbra. Jika ditembakkan salah, planet ini akan hancur total.</p>
+      <p>Kael menatap ke bintang terakhir di langit malam. Dengan tekad bulat, ia menggabungkan energinya dengan Aurora, menyalakan ledakan putih murni — cahaya yang membakar segala kegelapan namun meninggalkan kehidupan baru.</p>
+    </div>
+  </section>
+
+  <!-- EPILOG -->
+  <section id="page5">
+    <h2 class="section-title">Epilog — Dunia Setelah Cahaya</h2>
+    <div class="story">
+      <p>Seribu tahun kemudian, dunia Aetherion telah berubah. Di bawah sinar lembut Aurora baru, anak-anak bermain di taman kristal yang tumbuh dari tanah bekas perang. Di tengahnya berdiri monumen berbentuk tombak, bersinar setiap fajar.</p>
+      <p>Legenda Kael Varin tidak pernah mati. Ia menjadi cahaya abadi dalam sejarah manusia. “Selama masih ada cahaya...” — begitu kata prasasti itu — “...Aetherion akan selalu hidup.”</p>
+    </div>
+  </section>
+
+  <a href="#page1" class="scroll-top">↑</a>
+
+  <footer>
+    © 2025 Chronicles of Aetherion — Cinematic Edition by Farshar Creative.
+  </footer>
+
+  <script>
+    // Animasi fade-in saat scroll
+    const stories = document.querySelectorAll('.story');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    stories.forEach(story => observer.observe(story));
+  </script>
+</body>
+</html>
