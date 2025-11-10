@@ -1,0 +1,163 @@
+/* 🌐 Umum */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: aquamarine;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.logo {
+  width: 70px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 🔹 Navigasi */
+.navbar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #222;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 18px;
+  transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+  background: #1e90ff;
+}
+
+/* 🔹 Box */
+article, section {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.judul-box {
+  border-left: 5px solid #1e90ff;
+  padding-left: 10px;
+}
+
+/* 🔹 Biodata */
+.bio-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.bio-container img {
+  width: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* 🔹 Galeri */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* 🔹 Tabel */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 400px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+thead {
+  background: #1e90ff;
+  color: white;
+}
+
+/* 🔹 Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #1e90ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0077cc;
+}
+
+/* 🔹 Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: white;
+  padding: 15px 0;
+}
+
+/* 📱 Responsif */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .gallery-grid img { max-width: 45%; }
+}
+
+@media (min-width: 1024px) {
+  .gallery-grid img { max-width: 23%; }
+
+  form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  form label {
+    width: 100%;
+  }
+
+  input, textarea {
+    flex: 1 1 45%;
+  }
+
+  textarea {
+    flex-basis: 100%;
+  }
+}
